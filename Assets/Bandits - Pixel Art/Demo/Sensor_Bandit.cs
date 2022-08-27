@@ -21,11 +21,15 @@ public class Sensor_Bandit : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
+		Debug.Log( "OnTriggerEnter2D: " + this.gameObject.name);
+
         m_ColCount++;
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
+		Debug.Log( "OnTriggerExit2D: " + this.gameObject.name);
+
         m_ColCount--;
     }
 
